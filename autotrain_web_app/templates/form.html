@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoTrain Web UI</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 300px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>AutoTrain - Entrenamiento Web</h1>
+    <form method="post">
+        <label>Modelo base:</label><input name="model" value="mistralai/Mistral-7B-Instruct">
+        <label>Ruta dataset (.csv):</label><input name="dataset_path" value="./dataset.csv">
+        <label>Nombre del proyecto:</label><input name="project" value="demo_proyecto">
+        <label>Épocas:</label><input name="epochs" value="3">
+        <label>Batch size:</label><input name="batch" value="2">
+        <label>LoRA:</label><input type="checkbox" name="peft">
+        <label>Quantization:</label>
+        <select name="quantization">
+            <option value="">None</option>
+            <option value="4bit">4bit</option>
+            <option value="8bit">8bit</option>
+        </select>
+        <br><br>
+        <button type="submit">Entrenar</button>
+    </form>
+</body>
+</html>
