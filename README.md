@@ -31,5 +31,13 @@ python app.py
 # Accede desde tu navegador a:
 📍 http://127.0.0.1:5000
 ```
+![Captura de pantalla 2025-04-07 154616](https://github.com/user-attachments/assets/07d1e0a7-cb0c-4b04-a64e-636a87b4d09a)
+
+Alternativamente puede iniciar la UI de la biblioteca:
+
+```
+autotrain app --port 8080 --host 127.0.0.1
+```
+
 ![Captura de pantalla 2025-04-07 150511](https://github.com/user-attachments/assets/31b2f509-b987-48a6-b3d4-8f5065966cd9)
 
